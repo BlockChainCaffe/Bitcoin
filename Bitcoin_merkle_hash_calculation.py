@@ -68,8 +68,8 @@ def generate_merkle_root(q):
 # We retrieve the raw transaction file from blockchain, and save it to disk.
 # The second time, we read it from disk to be faster, in case we want to re-download it,
 # we can of course cancel the file on disk.
-if (path.exists("C:/Users/601787621/desktop/blockchain_block.json")):
-    with open("C:/Users/601787621/desktop/blockchain_block.json", "r") as read_file:
+if (path.exists("C:/temp/blockchain_block.json")):
+    with open("C:/temp/blockchain_block.json", "r") as read_file:
         data = json.load(read_file)
 else:
     req = requests.get('https://blockchain.info/rawblock/000000000000000000155a0c59bfdb54834608e7bf55e29920fd24591f1e3a98')
@@ -77,7 +77,7 @@ else:
     #r = requests.get('https://blockchain.info/rawblock/000000000003ba27aa200b1cecaad478d2b00432346c3f1f3986da1afd33e506')
     #print (r.json())
     data = req.json()
-    with open("C:/Users/601787621/desktop/blockchain_block.json", "w") as write_file:
+    with open("C:/temp/blockchain_block.json", "w") as write_file:
         json.dump(req.json(), write_file)
 
 
