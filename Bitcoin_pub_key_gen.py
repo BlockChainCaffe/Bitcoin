@@ -11,11 +11,10 @@ Gy = 326705100207588169780830851305070431844712733806592432759389043357573374824
 GPoint = (Gx,Gy)
 # Number of points in the field
 N=0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141
-# hex version of the key below, to put it inside bitaddress.org
+# hex version of the key below, to put it inside "www.bitaddress.org"
 # privKey = 0xa665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3
 privKey = 75263518707598184987916378021939673586055614731957507592904438851787542395619
-# on bitaddress.org ...
-#privKey = 0x095E09260673B23E228D76C32B4526607E3865810C1331EC9D20D97230ECDF4B
+
 
 # replace with a truly random number, for every new signature to be generated, this prime
 # number MUST be changed, this is important ... otherwise two signatures can be used to retrieve
